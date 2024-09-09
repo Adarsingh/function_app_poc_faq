@@ -112,8 +112,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     branch_name = 'main'  
     file_path = ''  
     
-    container_name = os.getenv('ContainerName')
-    storage_account_name = os.getenv('StorageAccountName')
+    # container_name = os.getenv('ContainerName')
+    # storage_account_name = os.getenv('StorageAccountName')
+    container_name = "empty-container"
+    storage_account_name = "faqtestblobstorage"
 
     base_url = f'https://dev.azure.com/{organization}'
 
