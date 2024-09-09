@@ -52,7 +52,7 @@ jobs:
     needs: build
     environment:
       name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+      url: https://data-ingestion-function-app.azurewebsites.net
     permissions:
       id-token: write #This is required for requesting the JWT
 
